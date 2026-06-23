@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yukta Pujari | Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background:linear-gradient(135deg,#4F46E5,#7C3AED,#EC4899);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        /* Navigation Bar */
+
+        .navbar{
+            position:fixed;
+            top:20px;
+            left:50%;
+            transform:translateX(-50%);
+            display:flex;
+            gap:12px;
+            background:rgba(255,255,255,0.15);
+            backdrop-filter:blur(10px);
+            padding:12px 25px;
+            border-radius:50px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            z-index:1000;
+        }
+
+        .navbar a{
+            text-decoration:none;
+            color:white;
+            font-weight:600;
+            padding:10px 18px;
+            border-radius:25px;
+            transition:0.3s;
+        }
+
+        .navbar a:hover{
+            background:white;
+            color:#4F46E5;
+        }
+
+        /* Main Container */
+
+        .container{
+            text-align:center;
+            color:white;
+            max-width:800px;
+            margin-top:80px;
+        }
+
+        .profile-img{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        h2{
+            font-size:1.5rem;
+            font-weight:400;
+            margin-bottom:20px;
+            color:#f3f4f6;
+        }
+
+        p{
+            font-size:1.1rem;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+            background:white;
+            color:#4F46E5;
+            padding:14px 30px;
+            border-radius:30px;
+            font-weight:bold;
+            transition:0.3s;
+            margin-bottom:25px;
+        }
+
+        .btn:hover{
+            transform:translateY(-4px);
+            background:#f1f5f9;
+        }
+
+        /* Social Links */
+
+        .social-links{
+            margin-top:20px;
+        }
+
+        .social-links a{
+            display:inline-block;
+            padding:12px 22px;
+            margin:10px;
+            text-decoration:none;
+            color:white;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:30px;
+            backdrop-filter:blur(10px);
+            transition:0.3s;
+        }
+
+        .social-links a:hover{
+            background:white;
+            color:#4F46E5;
+            transform:translateY(-3px);
+        }
+
+        /* Mobile Responsive */
+
+        @media(max-width:768px){
+
+            .navbar{
+                flex-wrap:wrap;
+                width:90%;
+                justify-content:center;
+                top:10px;
+                padding:10px;
+            }
+
+            .navbar a{
+                font-size:14px;
+                padding:8px 14px;
+            }
+
+            h1{
+                font-size:2.2rem;
+            }
+
+            h2{
+                font-size:1.2rem;
+            }
+
+            p{
+                font-size:1rem;
+            }
+
+            .profile-img{
+                width:140px;
+                height:140px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Dashboard Navigation -->
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+
+    </nav>
+
+    <!-- Home Content -->
+
+    <div class="container">
+
+        <img src="profile.jpg" alt="Profile Image" class="profile-img">
+
+        <h1>Yukta Pujari</h1>
+
+        <h2>Aspiring Business Analyst | Data Analyst</h2><br>
+
+        <p>
+            Aspiring Business Analyst and Data Analyst with skills in SQL,
+            Python, Excel, Power BI, and Data Visualization. Passionate
+            about transforming data into meaningful insights and helping
+            organizations make data-driven decisions through analysis,
+            reporting, and dashboard development.
+        </p>
+
+
+
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/yukta-pujari-83339a3ba" target="_blank">
+                🔗 LinkedIn
+            </a>
+
+            <a href="https://github.com/Yuktapoojary03" target="_blank">
+                💻 GitHub
+            </a>
+
+            <a href="mailto:yuktapoojary57@gmail.com">
+                📧 Email
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
